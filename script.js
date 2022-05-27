@@ -1,15 +1,15 @@
-// const botao = document.querySelector("div");
-// botao.addEventListener('click', function({
+const botao1 = document.querySelector("#botao1");
+const botao2 = document.querySelector("#botao2");
+const botao3 = document.querySelector("#botao3");
 
-// }));
+botao1.addEventListener("click", function(){
+    document.querySelector("#p1").innerHTML = "Bicicleta Shimano: R$1.500,00";
+});
 
-let meuNome = "João"
-let sobreNome = "Carlos"
+botao2.addEventListener("click", function(){
+    document.querySelector("#p2").innerHTML = "Bola de Futebol Wilson: R$200,00";
+});
 
-//template string
-console.log(`Oá, meu nome é ${meuNome} ${sobreNome}`)
-
-let valor = 1
-
-resultado = valor > 0 ? "sim" : "nao";
-console.log(resultado)
+botao3.addEventListener("click", function(){
+    document.querySelector("#p3").innerHTML = "Mangá 'Ataque dos Titãs': R$20,00";
+});
