@@ -5,7 +5,7 @@ con = sqlite3.connect(nome_banco)
 cur = con.cursor()
 
 produtos = [
-    (None, 'Bicicleta', 600.43),
+    (None, 'Bicicleta Shimano', 600.43),
     (None, 'Bola de Futebol', 200.99),
     (None, 'Manga Attack on Titans', 20.43)
 ]
