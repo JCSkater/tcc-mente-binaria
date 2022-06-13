@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
 * {
 margin: 0;
 padding: 0;
@@ -9,25 +11,30 @@ body{
     justify-content: center;
     flex-direction: column;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(245, 235, 235);
+    text-align: center;
 }
 
 header{
-    background-color: gray;
+    background-image: linear-gradient(rgb(0, 0, 0), rgb(245, 235, 235));
     color: white;
-    padding: 20px;
+    padding: 17px;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 25px;
     text-align: center;
 }
 
 main {
-    background-color: rgb(245, 235, 235);
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     padding: 50px 0px 112px 0px;
+    height: 100%;
 }
 
 #subtitulo{
     text-align: center;
     padding: 20px;
-    margin-bottom: 30px;
 }
 
 div {
@@ -39,9 +46,14 @@ div {
     margin: 10px;
 }
 
+#div1, #div2, #div3 {
+    width: 324px;
+    height: 342px;
+}
+
 .imagem{
     max-width: 300px;
-    max-height: 300px;
+    max-height: 342px;
     border-radius: 25px;
     opacity: 0.5;
     transition: opacity 1s;
@@ -49,10 +61,34 @@ div {
 
 .imagem:hover{
     opacity: 1;
+    cursor: pointer;
+}
+
+#p1, #p2, #p3 {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#p1:hover {
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    border-radius: 25px;
+}
+
+#p2:hover {
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    border-radius: 10px;
+}
+
+#p3:hover {
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    border-radius: 10px;
 }
 
 footer {
-    background-color: black;
+    background-image: linear-gradient(0deg,rgb(0, 0, 0), rgba(245, 235, 235, 0.295));
     color: white;
     font-weight: bolder;
     text-align: center;

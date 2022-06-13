@@ -17,9 +17,4 @@ consulta = """CREATE TABLE Produtos(
     )
     """
 cursor.execute(consulta)
-
-# consulta = "INSERT INTO Carros VALUES(NULL, 'Tesla', 'prata', 2022, 10)"
-# cursor.execute(consulta)
-
-# conexao.commit()
 conexao.close()

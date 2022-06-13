@@ -44,5 +44,7 @@ def lista_um(id):
 
     dados = cur.fetchone()
     con.close()
+    return jsonify(dados)
+    
 if __name__ == "__main__":
 	app.run()
